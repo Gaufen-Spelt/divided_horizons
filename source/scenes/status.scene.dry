@@ -67,6 +67,37 @@ Inflation: [+ inflation_2 +]%
 
 Economic growth: [+ economic_growth_2 +]%
 
+{!
+
+<div class="germany-map-frame">
+    <img src="germany1.png" alt="Vertical Map of Germany">
+</div>
+
+<style>
+.germany-map-frame {
+    width: 240px;               /* Adjust width for your "small" size preference */
+    height: 320px;              /* Sets a vertical portrait aspect ratio */
+    border: 3px solid #2c3e50;  /* The frame border */
+    border-radius: 8px;         /* Slightly rounded corners */
+    padding: 10px;              /* Space between map and frame */
+    background-color: #ffffff;  /* Frame background */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft drop shadow */
+    
+    /* Centers the image perfectly inside the frame */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.germany-map-frame img {
+    max-width: 100%;
+    max-height: 100%;
+    object-fit: contain;        /* Ensures the map scales perfectly without distorting */
+}
+</style>
+
+!}
+
 
 
 # = Public Opinion
