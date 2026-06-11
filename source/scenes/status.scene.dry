@@ -69,32 +69,35 @@ Economic growth: [+ economic_growth_2 +]%
 
 {!
 
-<div class="germany-map-frame">
-    <img src="img/germany1.png" alt="Vertical Map of Germany">
+<div class="germany-map-sidebar-frame">
+    <img src="img/germany1.png" alt="Map of Germany" class="sidebar-map-img">
 </div>
 
 <style>
-.germany-map-frame {
-    width: 240px;               /* Adjust width for your "small" size preference */
-    height: 320px;              /* Sets a vertical portrait aspect ratio */
-    border: 3px solid #2c3e50;  /* The frame border */
-    border-radius: 8px;         /* Slightly rounded corners */
-    padding: 10px;              /* Space between map and frame */
-    background-color: #ffffff;  /* Frame background */
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Soft drop shadow */
-    
-    /* Centers the image perfectly inside the frame */
+
+.germany-map-sidebar-frame {
+    width: 100%;                     /* Forces it to stay safely inside the sidebar width */
+    box-sizing: border-box;          /* Prevents padding from breaking layout boundaries */
+    border: 2px solid var(--border-color); /* Automatically matches light/dark mode borders */
+    background-color: var(--content-bg-color); /* Matches current theme background */
+    border-radius: 4px;
+    padding: 6px;
+    margin: 1em 0;                   /* Generates clean spacing above and below the map */
+    box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.germany-map-frame img {
-    max-width: 100%;
-    max-height: 100%;
-    object-fit: contain;        /* Ensures the map scales perfectly without distorting */
+.sidebar-map-img {
+    display: block;
+    width: 100% !important;          /* Stretches image to seamlessly match sidebar width */
+    height: auto !important;         /* Adjusts height automatically so Germany isn't warped */
+    object-fit: contain;
 }
+
 </style>
+
 
 !}
 
